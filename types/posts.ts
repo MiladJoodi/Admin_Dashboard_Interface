@@ -3,6 +3,7 @@ export interface Post {
     title: string;
     body: string;
     author: string;
+    date: string;
     comments: PostComment[];
 }
 
