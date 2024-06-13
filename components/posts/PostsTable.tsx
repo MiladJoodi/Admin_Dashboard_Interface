@@ -30,6 +30,13 @@ const PostsTable = ({limit, title} : PostsTableProps) => {
                         <TableHead className="hidden md:table-cell text-right">Date</TableHead>
                     </TableRow>
                 </TableHeader>
+                <TableBody>
+                    {posts.map((post)=> (
+                        <TableRow key={post.id}>
+
+                        </TableRow>
+                    ))}
+                </TableBody>
             </Table>
         </div>
     );
