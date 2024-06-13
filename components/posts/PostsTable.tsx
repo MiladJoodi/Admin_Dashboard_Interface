@@ -9,6 +9,7 @@ import {
   } from "@/components/ui/table"
   import Link from "next/link";
   import posts from '@/data/posts'
+import { Post } from "@/types/posts";
 
   interface PostsTableProps {
     limit?: number;
@@ -18,7 +19,10 @@ import {
 const PostsTable = ({limit, title} : PostsTableProps) => {
    
     // Sort posts in dec order based on date
-    const sortedPosts : Post[] = [...posts]
+    const sortedPosts : Post[] = [...posts].sort((a, b)=> new Date(b.date).getTime() - new Date(a.date).getTime());
+
+    // Filter post to limit
+    const filteredPosts = limit ? sortedPosts.slice(0, limit) : sortedPosts;
     
     return (
         <div className="mt-10">
@@ -36,7 +40,7 @@ const PostsTable = ({limit, title} : PostsTableProps) => {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    {posts.map((post)=> (
+                    {filteredPosts.map((post)=> (
                         <TableRow key={post.id}>
                             <TableCell>{post.title}</TableCell>
                             <TableCell className="hidden md:table-cell">
