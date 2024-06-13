@@ -15,7 +15,10 @@ export default function Home() {
         className="text-slate-500" 
         size={72} />} 
         />
-       </div>
+        <DashboardCard title="Categories" count={12} icon={<Folder className="text-slate-500" size={72} />} />
+        <DashboardCard title="User" count={750} icon={<User className="text-slate-500" size={72} />} />
+        <DashboardCard title="Comments" count={1200} icon={<MessageCircle className="text-slate-500" size={72} />} />
+      </div>
     </>
   );
 }
