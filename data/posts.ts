@@ -168,3 +168,5 @@ const posts : Post[] = [
         ],
       },
 ]
+
+export default posts;
