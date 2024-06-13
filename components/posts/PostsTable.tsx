@@ -42,7 +42,7 @@ const PostsTable = ({limit, title} : PostsTableProps) => {
                                 {post.date}
                             </TableCell>
                             <TableCell>
-                                <Link href={`/posts`}></Link>
+                                <Link href={`/posts/edit/${post.id}`}></Link>
                             </TableCell>
                         </TableRow>
                     ))}
