@@ -69,9 +69,9 @@ const PostEditPage = ({ params }: PostEditPageProps) => {
                         name="title"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary-700">Title</FormLabel>
+                                <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-white">Title</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="shadcn" {...field} />
+                                    <Input className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0" placeholder="Enter Title" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
