@@ -1,8 +1,10 @@
+import AuthTabs from "@/components/auth/AuthTabs";
+
 const AuthPage = () => {
     return (
-        <div>
-            Enter
-        </div>
+        <>
+            <AuthTabs />
+        </>
     );
 }
 
