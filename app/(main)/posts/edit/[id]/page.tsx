@@ -30,9 +30,20 @@ import {
     date: z.string().min(1, {
         message: 'Date is required'
     }),
-  })
+  });
 
-const PostEditPage = () => {
+interface PostEditPageProps {
+    params: {
+        id: string;
+    }
+}
+
+const PostEditPage = ({params}: PostEditPageProps) => {
+
+    const post = posts.find((post)=> post.id === params.id);
+
+    console.log(post)
+
     return (
         <>
             <BackButton text="Back To Posts" link="/posts" />
