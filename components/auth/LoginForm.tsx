@@ -28,13 +28,7 @@ const formSchema = z.object({
     })
 });
 
-interface LoginFormProps {
-    params: {
-        id: string;
-    }
-}
-
-const LoginForm = ({ params }: LoginFormProps) => {
+const LoginForm = () => {
 
     const router = useRouter()
 

@@ -34,13 +34,8 @@ const formSchema = z.object({
     })
 });
 
-interface RegisterFormProps {
-    params: {
-        id: string;
-    }
-}
 
-const RegisterForm = ({ params }: RegisterFormProps) => {
+const RegisterForm = () => {
 
     const router = useRouter()
 
