@@ -107,7 +107,7 @@ const PostEditPage = ({ params }: PostEditPageProps) => {
                             </FormItem>
                         )}
                     />
-                    {/* Author */}
+                    {/* Date */}
                     <FormField
                         control={form.control}
                         name="date"
@@ -115,12 +115,15 @@ const PostEditPage = ({ params }: PostEditPageProps) => {
                             <FormItem>
                                 <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-white">Date</FormLabel>
                                 <FormControl>
-                                    <Input className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0" placeholder="Enter Title" {...field} />
+                                    <Input className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0" placeholder="Enter Date" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
+                    <Button className="w-full dark:bg-slate-800 dark:text-white">
+                        Update Post
+                    </Button>
 
                 </form>
             </Form>
