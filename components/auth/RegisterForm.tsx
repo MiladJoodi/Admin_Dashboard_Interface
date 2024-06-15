@@ -125,7 +125,7 @@ const RegisterForm = () => {
                             )}
                         />
 
-                        <Button className='w-full'>Sign In</Button>
+                        <Button className='w-full'>Sign Up</Button>
 
                     </form>
                 </Form>
