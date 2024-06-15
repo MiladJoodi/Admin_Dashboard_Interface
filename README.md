@@ -51,7 +51,15 @@ Thank you sincerely. 🙏
       height="38"
     />
   </a>
-    <a href="https://lucide.dev/" target="_blank" rel="noreferrer">
+    <a href="https://recharts.org/en-US" target="_blank" rel="noreferrer">
+  <img
+    src="https://s8.uupload.ir/files/ch_ltrf.png"
+    alt="Material Ui"
+    width="85"
+    height="35"
+  />
+</a>
+<a href="https://lucide.dev/" target="_blank" rel="noreferrer">
   <img
     src="https://lucide.dev/logo.light.svg"
     alt="Material Ui"
